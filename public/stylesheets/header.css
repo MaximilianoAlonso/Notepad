@@ -6,7 +6,6 @@ header {
   background-color:#423C6A;
   border-radius: 25px 25px 0 0;
   padding: 10px;
-  
   z-index: 2;
   border-top: 2px solid rgb(26, 26, 26);
   border-left: 2px solid rgb(20, 20, 20);
@@ -42,18 +41,20 @@ header section {
  text-align: right;
 }
 .header_menu{
-display: none;
+
 position: absolute;
-top: 40px;
-right: 0;
-transition: all 2s;
-background-color: rgba(175, 150, 146, 0.7);
+top: 75px;
+right: -100%;
+transition: right 2s;
+background-color: rgba(0, 0, 0, 0.7);
 border-radius: 20px;
+width: 95%;
+
 }
 
 header section ul li {
   padding: 10px;
-  text-align: right;
+ 
   text-align: center;
 }
 
@@ -62,12 +63,15 @@ header section ul li a i {
 }
 
 header section ul li a {
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 900;
+  font-size: 25px;
 }
 
 .menuEvent {
+  right: 10px;
   display: block;
+  transition: right 2s;
 }
 
 @media (min-width: 768px) {
@@ -90,4 +94,33 @@ header section ul li a {
     right: 100px;
     
   }
+  .header_menu{
+
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    transition: right 1s;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    width: 20%;
+    height: 250px;
+
+    
+    }
+    header section ul li {
+      padding: 25px;
+    
+      text-align: right;
+    }
+    
+    header section ul li a {
+      color: rgb(255, 255, 255);
+      font-weight: 900;
+      font-size: 18px;
+    }
+.menuEvent {
+  right: 5px;
+  display: block;
+  transition: right 1s;
+}
 }
