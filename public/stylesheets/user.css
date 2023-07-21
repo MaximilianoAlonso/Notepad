@@ -1,4 +1,58 @@
-.main_user h4{
-font-size: 18px;
+.main_user h2{
+font-size: 20px;
 text-align: center;
+}
+.subtitleNotes{
+margin-left: 16%;
+color: rgb(211, 196, 65);
+}
+.main_user section article ul{
+    display: flex;
+    justify-content: center;
+}
+.main_user section article a{
+    color: wheat;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.list{
+    margin-top: 4px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.192);
+    padding: 5px;
+   width: 100%;
+}
+.list a{
+
+    margin-top: 2px;
+    align-self: center;
+  
+   
+}
+.numList{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+width: 10%;
+text-align: right;
+margin-right: 15px;
+font-weight: 900;
+}
+.titleList{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 70%;
+  text-align: left;
+  
+}
+
+.viewTitleList{
+    width: 20%;
+
+}
+
+@media (min-width: 768px) {
+    .list{
+        width: 80%;
+    }
+
 }

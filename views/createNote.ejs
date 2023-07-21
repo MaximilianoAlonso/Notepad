@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
-<!-- head -->
-  <%- include('./partials/head') %> 
+  <!-- head -->
+  <%- include('./partials/head') %>
 
-  <body> 
+  <body>
     <!-- header -->
-    <%- include('./partials/header') %> 
+    <%- include('./partials/header') %>
     <main class="main_createNote">
-        <form method="POST">
-            <label for="title">Titulo:</label>
-            <input type="text" name="title" id="title">
-            <br>
-            <textarea name="note" id="note" cols="30" rows="10"></textarea>
-            <button type="submit">Guardar</button>
-        </form>
+      <form method="POST">
+        <div>
+          <label for="title">Titulo:</label>
+          <input type="text" name="title" id="title" />
+        </div>
+        <div>
+          <textarea name="note" id="note" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+          <button type="submit">Guardar</button>
+        </div>
+      </form>
     </main>
 
-    <%- include('./partials/footer') %> 
-  <script src="/javascripts/index.js"></script>
-  <script src="/javascripts/note.js"></script>
+    <%- include('./partials/footer') %>
+    <script src="/javascripts/index.js"></script>
+    <script src="/javascripts/note.js"></script>
   </body>
-  </html>
+</html>

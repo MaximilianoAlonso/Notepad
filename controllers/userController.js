@@ -15,7 +15,7 @@ module.exports = {
         where: {
           userId: userLog.id,
         },
-        attributes: ["title", "note"],
+        attributes: ["id","title", "note"],
       });
 
       return res.render("user", {
@@ -104,9 +104,10 @@ module.exports = {
   },
   saveNote: async (req, res) => {
     try {
-      const { title, note } = req.body;
+      const { id, title, note } = req.body;
 
       const newNote = await db.notes.create({
+       
         userId: req.session.userLogin.id,
         title: title,
         note: note,
