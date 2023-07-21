@@ -1,0 +1,93 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 90%;
+  background-color:#423C6A;
+  border-radius: 25px 25px 0 0;
+  padding: 10px;
+  
+  z-index: 2;
+  border-top: 2px solid rgb(26, 26, 26);
+  border-left: 2px solid rgb(20, 20, 20);
+  border-right: 4px solid rgb(24, 24, 24);
+
+}
+h1 a {
+  color: rgb(255, 255, 255);
+}
+.logOut{
+  color: #d8d8d8;
+  background-color:#181244;
+  padding: 5px;
+  font-weight: 900;
+  display: block;
+  margin-top: 5px;
+  border-radius: 25px;
+  
+}
+.header_burger i {
+  font-size: 25px;
+  padding: 8px;
+  cursor: pointer;
+  color:white;
+
+  -webkit-text-stroke: 2px rgb(219, 219, 219);
+}
+header section {
+  display: flex;
+  flex-direction: column;
+}
+.header_burger{
+ text-align: right;
+}
+.header_menu{
+display: none;
+position: absolute;
+top: 40px;
+right: 0;
+transition: all 2s;
+background-color: rgba(175, 150, 146, 0.7);
+border-radius: 20px;
+}
+
+header section ul li {
+  padding: 10px;
+  text-align: right;
+  text-align: center;
+}
+
+header section ul li a i {
+  padding-right: 8px;
+}
+
+header section ul li a {
+  color: black;
+  font-weight: 900;
+}
+
+.menuEvent {
+  display: block;
+}
+
+@media (min-width: 768px) {
+
+  h1 a {
+   margin-left: 20px;
+  }
+  .header_burger i {
+    margin-right: 20px;
+  }
+  .logOut{
+    color: #d8d8d8;
+    background-color:#181244;
+    padding: 5px;
+    font-weight: 900;
+    display: block;
+    margin-top: 5px;
+    border-radius: 25px;
+    position: absolute;
+    right: 100px;
+    
+  }
+}

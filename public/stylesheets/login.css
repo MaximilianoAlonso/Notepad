@@ -1,0 +1,30 @@
+.main_login h3 {
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 20px;
+
+}
+.main_login form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
+}
+
+@media (min-width: 768px) {
+    .main_login{
+        padding-top: 30px;
+    }
+  .main_login h3 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .main_login form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 30%;
+  }
+}

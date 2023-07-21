@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
+<!-- head -->
+  <%- include('./partials/head') %> 
+
+  <body> 
+    <!-- header -->
+    <%- include('./partials/header') %> 
     
-      <form>
+    <main class="index_main">
+<p>
+  NoteP@d es una aplicación web diseñada para proporcionarte un bloc de notas, donde podrás registrar una cuenta y guardar tus notas de manera segura. Con una interfaz intuitiva y funcionalidades completas, NoteP@d te ofrece una experiencia perfecta para gestionar tus pensamientos y tareas diarias.
+</p>
 
 
-      </form>
+    </main>
 
-      
+    <%- include('./partials/footer') %> 
+  <script src="/javascripts/index.js"></script>
   </body>
-</html>
+  </html>

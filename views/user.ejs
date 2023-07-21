@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<!-- head -->
+  <%- include('./partials/head') %> 
+
+  <body> 
+    <!-- header -->
+    <%- include('./partials/header') %> 
+    <main class="main_user">
+      <% if (locals.userLogin) { %>
+        <h4>Bienvenid@: <%= userLogin.name %></h4>
+
+       <h4>Notas</h4>
+       <% notesUser.forEach(element => { %>
+        <h5> <%= element.title %></h5> <br>
+        <p><%= element.note %><br></p>
+       <% }) %>
+       
+
+        
+      <% } %>
+      <ul>
+        <li><a href="/user/createNote">Crear Nota! <span>+</span></a></li>
+      </ul>
+    </main>
+
+    <%- include('./partials/footer') %> 
+  <script src="/javascripts/index.js"></script>
+  <script src="/javascripts/user.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,15 @@
+.index_main p{
+        padding: 25px;
+        font-weight: 700;
+        text-align: center;
+    
+}
+
+@media (min-width: 768px) {
+    .index_main p{
+        font-size: 22px;
+        padding: 50px;
+
+    }
+
+}

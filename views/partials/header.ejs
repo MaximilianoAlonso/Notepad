@@ -1,0 +1,17 @@
+<header>
+  <h1><a href="/">NoteP@d</a></h1>
+<div>
+  <% if (locals.userLogin) { %>
+    <a class="logOut" href="/user/logOut"> Cerrar sesion</a>
+   <% } %>
+</div>
+  <section>
+    <div class="header_burger"><i class="fa-solid fa-bars"></i></div>
+      <ul class="header_menu">
+        <li><a href="/user/login"><i class="fa-solid fa-user"></i>LOGIN</a></li>
+        <li><a href="/user/register"><i class="fa-solid fa-id-card"></i>REGISTER</a></li>
+        <li><a href="/user"><i class="fa-solid fa-file-lines"></i>NOTES</a></li>
+      </ul>
+  </section>
+
+</header>

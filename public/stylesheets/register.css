@@ -1,0 +1,63 @@
+.main_register h3{
+    text-align: center;
+    font-weight: 900;
+    }
+    .main_register form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+    
+    }
+    .main_register form div{
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+       margin: 5px;
+    
+    }
+
+    @media (min-width: 768px) {
+        .main_register h3{
+           font-size: 30px;
+            }
+            .main_register {
+            display: flex;
+            flex-direction:column;
+        flex-wrap: wrap;
+            margin: 0 auto;
+         
+            }
+
+ .main_register form{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+.main_register form div{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 25px;
+    height: 30px;
+
+}
+.main_register form div input{
+width: 100%;
+
+}
+
+.main_register form div label{
+    width: auto;
+}
+.buton_box{
+    width: 100%;
+  
+}
+
+    }

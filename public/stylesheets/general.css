@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+}
+
+body {
+    background-image: url('/images/fondoLapices.jpg');
+    background-size:contain;
+
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+a{
+text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+main{
+    border-radius:0 0 25px 25px;
+    height: 80%;
+    position: fixed;
+   top: 85px;
+   width: 90%;
+   padding: 8px;
+   background-color: #47439be7;
+   z-index: 1;
+   border-left: 2px solid rgb(39, 39, 39);
+   border-right: 4px solid rgb(26, 26, 26);
+   border-bottom: 4px solid rgb(20, 20, 20);
+   
+}
+
+@media (min-width: 768px) {
+
+}

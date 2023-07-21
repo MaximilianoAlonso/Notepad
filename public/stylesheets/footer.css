@@ -1,0 +1,10 @@
+footer{
+
+}
+
+footer ul{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    padding: 10px;
+}

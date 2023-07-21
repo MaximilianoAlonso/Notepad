@@ -1,0 +1,28 @@
+label{
+    font-weight: 900;
+
+}
+input{
+    border-radius: 5px;
+    border:none;
+    padding:2px
+
+}
+button{
+    margin-top: 10px;
+    font-weight: 900;
+    padding:5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    input{
+  
+        padding:5px
+    
+    }
+    button{
+        font-size: 20px;
+    }
+}
