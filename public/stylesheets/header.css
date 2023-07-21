@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  width: 90%;
+  width: 95%;
   background-color:#423C6A;
   border-radius: 25px 25px 0 0;
   padding: 10px;

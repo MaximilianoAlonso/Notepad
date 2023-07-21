@@ -11,7 +11,7 @@ body {
 
     background-repeat: repeat;
     background-attachment: fixed;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
   }
@@ -25,10 +25,10 @@ li{
 }
 main{
     border-radius:0 0 25px 25px;
-    height: 80%;
+    height: 85%;
     position: fixed;
-   top: 85px;
-   width: 90%;
+   top: 75px;
+   width: 95%;
    padding: 8px;
    background-color: #47439be7;
    z-index: 1;

@@ -1,12 +1,14 @@
 .main_register h3{
     text-align: center;
     font-weight: 900;
+    font-size: 25px;
+
     }
     .main_register form{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
     
     }
     .main_register form div{

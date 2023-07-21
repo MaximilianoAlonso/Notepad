@@ -1,15 +1,17 @@
 .main_login h3 {
   text-align: center;
   font-weight: 900;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-size: 25px;
 
 }
 .main_login form {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
 }
+
 
 @media (min-width: 768px) {
     .main_login{
