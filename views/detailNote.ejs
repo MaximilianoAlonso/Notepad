@@ -15,9 +15,9 @@
         <p class="note"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus recusandae repellendus quod sit eaque, dignissimos porro enim doloremque minus quibusdam velit, inventore dolores magni iusto ratione atque  sit amet consectetur adipisicing elit. Ducimus recusandae repellendus quod sit eaque, dignissimos porro enim doloremque minus quibusdam velit, inventore dolores magni iusto ratione atque nam eligendi. Repellat aspernatur enim modi repellendus nam? Iure, aperiam. Recusandae praesentium aperiam consectetur accusantium hic assumenda, vero voluptas voluptatibus ut, vel autem magni quibusdam deleniti id quas cum excepturi. Est, hic alias minima voluptatibus provident repudiandae, dolor animi, qui e sit amet consectetur adipisicing elit. Ducimus recusandae repellendus quod sit eaque, dignissimos porro enim doloremque minus quibusdam velit, inventore dolores magni iusto ratione atque nam eligendi. Repellat aspernatur enim modi repellendus nam? Iure, aperiam. Recusandae praesentium aperiam consectetur accusantium hic assumenda, vero voluptas voluptatibus ut, vel autem magni quibusdam deleniti id quas cum excepturi. Est, hic alias minima voluptatibus provident repudiandae, dolor animi, qui enam eligendi. Repellat aspernatur enim modi repellendus nam? Iure, aperiam. Recusandae praesentium aperiam consectetur accusantium hic assumenda, vero voluptas voluptatibus ut, vel autem magni quibusdam deleniti id quas cum excepturi. Est, hic alias minima voluptatibus provident repudiandae, dolor animi, qui ea totam nostrum.<%= note.note %></p> 
         <p class="date"><b>Creado el dìa :  </b><%= note.createdAtFormatted %>  </p>
         <div class="deleteEditBox">
-          <form  action="/user/detailNote/<%=note.id%>?_method=DELETE" method="POST">
+          <form id="deleteNote" action="/user/detailNote/<%=note.id%>?_method=DELETE" method="POST">
      <button type="submit">Borrar</button></form>
-     <button><a href="">Editar</a></button>
+     <button><a href="/user/editNote/<%=note.id%>">Editar</a></button>
     <button> <a href="/user">Atras</a></button>
     </div>
       

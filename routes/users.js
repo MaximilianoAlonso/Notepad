@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {notes, register, saveRegister, login, createNote, saveNote, loadLogin, logOut, detailNote,deleteNote} = require('../controllers/userController');
+const {notes, register, saveRegister, login, createNote, saveNote, loadLogin, logOut, detailNote,deleteNote,edit,update} = require('../controllers/userController');
 
 /* Validaciones y middlewares*/
 const loginValidator = require("../validations/loginValidator")
@@ -20,4 +20,7 @@ router.get('/',checkUserGuest, notes)
       .get("/logOut", logOut)
       .get("/detailNote/:id", detailNote)
       .delete("/detailNote/:id", deleteNote)
+      .get("/editNote/:id", edit)
+      .put("/detailNote/:id", update)
+
 module.exports = router;

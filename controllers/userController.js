@@ -152,6 +152,30 @@ module.exports = {
       console.log(error);
     }
   },
+  edit: async (req, res) => {
+    const { id } = req.params;
+    try {
+      const note = await db.notes.findByPk(id,{
+        attributes:["id", "title", "note", "createdAt"]
+      })
+    console.log(note);
+       return res.render("editNote", {
+      title: "Editar Nota", 
+       note: note
+  })
+    } catch (error) {
+      console.log(error);
+    }
+
+   
+   
+  },
+  update: (req, res) => {
+    const { id } = req.params;
+
+    
+    return res.redirect("detailNote")
+  },
   deleteNote: async (req,res) => {
     const {id} = req.params;
  
