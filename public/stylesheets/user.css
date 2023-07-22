@@ -53,8 +53,21 @@ font-weight: 900;
     width: 20%;
 
 }
+.sinNotasUser{
+    width: 30%;
+   padding: 50px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 25px;
 
-
+}
+.agregarNota{
+    background-color: rgb(0, 255, 136);
+    color:black;
+    border-radius: 25px;
+    padding: 5px;
+    font-weight: 900;
+}
 @media (min-width: 768px) {
     .list{
         width: 80%;
@@ -62,5 +75,14 @@ font-weight: 900;
     .main_user section article{
         overflow: auto;
     }
-
+    .agregarNota{
+        background-color: rgb(0, 255, 136);
+        color:black;
+        border-radius: 25px;
+        padding: 5px;
+        font-weight: 900;
+        position: absolute;
+        right: 50px;
+        top:15px
+    }
 }

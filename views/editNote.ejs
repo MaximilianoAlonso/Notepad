@@ -7,7 +7,7 @@
     <!-- header -->
     <%- include('./partials/header') %>
     <main class="main_createNote">
-      <form id="formCreate" method="POST">
+      <form id="formCreate" action="/user/editNote/<%= note.id %>?_method=PUT" method="post">
         <div>
           <input type="text" name="title" id="title" value="<%= note.title %>"/>
         </div>

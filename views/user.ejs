@@ -11,8 +11,13 @@
       <h2>Bienvenid@: <%= userLogin.name %> estas son tus Notas:</h2>
       <section>
     
-        <article>
+        <article> <% if (notesUser.length === 0) { %>
+          <h2 class="sinNotasUser">¡¡¡ AÚN NO TIENES NOTAS GUARDADAS. !!!</h2>
+         <% } %>
+         
           <% notesUser.forEach(element => { %>
+            
+           
           <ul>
             <li class="list">
               <a href="/user/detailNote/<%= element.id %>">
@@ -29,7 +34,7 @@
       <% } %>
       <ul>
         <li>
-          <a href="/user/createNote">Crear Nota! <span>+</span></a>
+          <a class="agregarNota" href="/user/createNote">Crear Nota! <span>+</span></a>
         </li>
       </ul>
     </main>

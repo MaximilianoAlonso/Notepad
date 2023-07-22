@@ -21,6 +21,6 @@ router.get('/',checkUserGuest, notes)
       .get("/detailNote/:id", detailNote)
       .delete("/detailNote/:id", deleteNote)
       .get("/editNote/:id", edit)
-      .put("/detailNote/:id", update)
+      .put("/editNote/:id", update)
 
 module.exports = router;

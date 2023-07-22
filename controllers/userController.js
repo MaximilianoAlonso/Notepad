@@ -170,11 +170,25 @@ module.exports = {
    
    
   },
-  update: (req, res) => {
-    const { id } = req.params;
+  update: async (req, res) => {
+    const errors = validationResult(req);
+    try {
+      const { title, note } = req.body;
 
-    
-    return res.redirect("detailNote")
+    const id = +req.params.id
+
+      const newNote = await db.notes.update({ 
+        title: title,
+        note: note,
+      },{
+        where:{id}
+      });
+
+      return res.redirect("/user");
+    } catch (error) {
+      console.log(error);
+    }
+ 
   },
   deleteNote: async (req,res) => {
     const {id} = req.params;
