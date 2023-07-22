@@ -1,10 +1,14 @@
 .main_user h2{
-font-size: 20px;
+font-size: 28px;
 text-align: center;
+color: antiquewhite;
 }
 .subtitleNotes{
 margin-left: 16%;
 color: rgb(211, 196, 65);
+}
+.main_user section article{
+    overflow: scroll;
 }
 .main_user section article ul{
     display: flex;
@@ -50,9 +54,13 @@ font-weight: 900;
 
 }
 
+
 @media (min-width: 768px) {
     .list{
         width: 80%;
+    }
+    .main_user section article{
+        overflow: auto;
     }
 
 }

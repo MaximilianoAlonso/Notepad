@@ -45,7 +45,7 @@ header section {
 position: absolute;
 top: 75px;
 right: -100%;
-transition: right 2s;
+transition: right 0.5s;
 background-color: rgba(0, 0, 0, 0.7);
 border-radius: 20px;
 width: 95%;
@@ -71,7 +71,7 @@ header section ul li a {
 .menuEvent {
   right: 10px;
   display: block;
-  transition: right 2s;
+  transition: right 1s;
 }
 
 @media (min-width: 768px) {

@@ -7,22 +7,23 @@
     <!-- header -->
     <%- include('./partials/header') %>
     <main class="main_createNote">
-      <form method="POST">
+      <form id="formCreate" method="POST">
         <div>
-          <label for="title">Titulo:</label>
-          <input type="text" name="title" id="title" />
+        
+          <input type="text" name="title" id="title" placeholder="Aqui ingresa el titulo"/>
         </div>
         <div>
-          <textarea name="note" id="note" cols="30" rows="10"></textarea>
+          <textarea name="note" id="note" cols="30" rows="10" placeholder="Aqui escribe tu nueva nota"></textarea>
         </div>
         <div>
-          <button type="submit">Guardar</button>
+          <button id="saveNote" type="submit">Guardar</button>
+         
         </div>
       </form>
     </main>
 
     <%- include('./partials/footer') %>
     <script src="/javascripts/index.js"></script>
-    <script src="/javascripts/note.js"></script>
+    <script src="/javascripts/noteCreate.js"></script>
   </body>
 </html>

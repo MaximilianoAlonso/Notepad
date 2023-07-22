@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import "./general.css";
 @import "./header.css";
-@import "./footer.css";
+@import "./detail.css";
 @import "./index.css";
 @import "./login.css";
 @import "./user.css";
 @import "./register.css";
+@import "./create.css";
 @import "./form.css";
 
 

@@ -15,8 +15,8 @@
           <% notesUser.forEach(element => { %>
           <ul>
             <li class="list">
-              <a href="#">
-                <p class="numList"><%= element.id %> - </p><p class="titleList"><%= element.title %></p>
+              <a href="/user/detailNote/<%= element.id %>">
+                <p class="titleList"><%= element.title %></p>
                 <p class="viewTitleList"><i class="fa-solid fa-circle-plus"></i> VER</p>
               </a>
             </li>
@@ -37,5 +37,6 @@
     <%- include('./partials/footer') %>
     <script src="/javascripts/index.js"></script>
     <script src="/javascripts/user.js"></script>
+    
   </body>
 </html>

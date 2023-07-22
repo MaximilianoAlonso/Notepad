@@ -1,0 +1,116 @@
+.main_detail section {
+  height: 90%;
+}
+.main_detail section .headerNote {
+  background-color: rgba(98, 64, 248, 0.411);
+  display: flex;
+}
+.main_detail section .headerNote .title {
+  width: 80%;
+  margin-left: 5px;
+  height: 40px;
+  overflow: scroll;
+}
+.main_detail section .headerNote .id {
+  width: auto;
+  padding: 1px 2px;
+  text-align: right;
+  align-self: center;
+  background-color: black;
+  color: beige;
+  border-radius: 5px;
+}
+.main_detail section .note {
+  overflow: scroll;
+  padding: 15px;
+  height: 80%;
+  font-size: 22px;
+  background-color: rgb(231, 205, 255);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.main_detail section .date {
+  width: 95%;
+  margin: 0 auto;
+  bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  color: azure;
+}
+.main_detail section .deleteEditBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_detail section .deleteEditBox button a{
+
+  color: rgb(255, 225, 225);
+}
+.main_detail section .deleteEditBox button{
+  background-color: rgb(24, 0, 46);
+  border-radius: 25px;
+  border: 2px solid rgb(226, 226, 226);
+  font-size: 30px;
+  padding: 5px 9px;
+  color: rgb(255, 255, 255);
+}
+@media (min-width: 768px) {
+  .main_detail section .note {
+    overflow: auto;
+   
+    overflow-y: scroll;
+    box-shadow: 4px 4px 4px black;
+  }
+
+  .main_detail section .headerNote .title {
+
+    overflow: auto;
+  }
+
+  .main_detail section .date {
+    width: 40%;
+    justify-content: center;
+    align-self: center;
+    margin-top: 10px;
+    float: right;
+  }
+  .main_detail section .date b{
+    margin-right: 15px;
+  }
+  .main_detail section .deleteEditBox {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+
+  }
+ 
+  .main_detail section .headerNote .id {
+  
+    width: 10%;
+    padding: 5px 10px;
+    text-align: center;
+    align-self: center;
+    background-color: black;
+    color: beige;
+    border-radius: 5px;
+  }
+  .main_detail section .deleteEditBox button{
+    background-color: rgb(24, 0, 46);
+    border-radius: 25px;
+    border: 2px solid rgb(226, 226, 226);
+    font-size: 20px;
+    padding: 3px 20px;
+    color: rgb(255, 233, 233);
+  }
+
+  .main_detail section .note::-webkit-scrollbar {
+    width: 18px;               /* width of the entire scrollbar */
+  }
+  
+  .main_detail section .note::-webkit-scrollbar-thumb {
+    background-color: rgba(148, 63, 173, 0.644);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 2px solid rgb(241, 179, 179);  /* creates padding around scroll thumb */
+  }
+}

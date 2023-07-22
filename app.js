@@ -5,9 +5,11 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const session = require('express-session');
+const methodOverride = require('method-override');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
+
 const { use } = require("passport");
 const validateSession = require("./middlewares/validateSession")
 
@@ -17,6 +19,7 @@ const app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
 
 app.use(logger('dev'))
     .use(express.json())
@@ -30,7 +33,7 @@ app.use(logger('dev'))
     }))
     
     .use(validateSession)
-
+   .use(methodOverride('_method'));
 app.use('/', indexRouter);
 app.use('/user', usersRouter);
 

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {user, register, saveRegister, login, createNote, saveNote, loadLogin, logOut} = require('../controllers/userController');
+const {notes, register, saveRegister, login, createNote, saveNote, loadLogin, logOut, detailNote,deleteNote} = require('../controllers/userController');
 
 /* Validaciones y middlewares*/
 const loginValidator = require("../validations/loginValidator")
@@ -10,7 +10,7 @@ const checkUserLog = require("../middlewares/checkUserLog")
 
 
 /* GET users listing. */
-router.get('/',checkUserGuest, user)
+router.get('/',checkUserGuest, notes)
       .get('/register', register)
       .post('/register', registerValidator, saveRegister)
       .get("/login",checkUserLog, login)
@@ -18,4 +18,6 @@ router.get('/',checkUserGuest, user)
       .get("/createNote", createNote )
       .post("/createNote", saveNote)
       .get("/logOut", logOut)
+      .get("/detailNote/:id", detailNote)
+      .delete("/detailNote/:id", deleteNote)
 module.exports = router;

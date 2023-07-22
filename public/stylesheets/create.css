@@ -1,0 +1,21 @@
+.main_createNote form input{
+    width: 95%;
+    margin: 5px;
+
+}
+.main_createNote form textarea{
+    width: 95%;
+    resize: none;
+ height: 100%;
+    margin: 5px;
+
+}
+.main_createNote form button{
+    width: 95%;
+    padding: 0;
+    margin: 5px;
+
+}
+#cancelNote a {
+    color: black;
+}
