@@ -50,11 +50,14 @@ module.exports = {
       }
     }
     const errorObjet = error.mapped();
-    return res.send(errorObjet);
+    return res.render("register", {
+      title: "Registrate!",
+      errors: errorObjet
+    });
   },
   login: (req, res) => {
     return res.render("login", {
-      title: "Ingresa!",
+      title: "Ingresar!",
     });
   },
   loadLogin: async (req, res) => {
@@ -84,6 +87,9 @@ module.exports = {
           email: userLog.email,
           notesUser: notesUser,
         };
+        
+     
+        
 
         /* devuelve los datos del usuario logueado */
         return res.redirect("/user");
@@ -92,8 +98,15 @@ module.exports = {
         console.log(error);
       }
     } else {
+      
       /* aca me daria los errores de las validaciones */
-      return res.send(errors.mapped());
+ /*     return res.send(errors.mapped().password.msg) */
+      return res.render('login', {
+        title: 'Ingresar!',
+        errors: errors.mapped,
+        old: req.body,
+    })
+
     }
   },
   logOut: (req, res) => {

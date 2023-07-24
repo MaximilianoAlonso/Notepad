@@ -9,10 +9,10 @@
     <main class="main_detail">
       <section>
         <div class="headerNote">
-                  <h1 class="title">Titulo de nodfas asd<%= note.title %> </h1>   <p class="id"><b>Nº: </b><%= note.id %> </p>
+                  <h1 class="title"><%= note.title %> </h1>   <p class="id"><b>Nº: </b><%= note.id %> </p>
         </div>
 
-        <p class="note"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus recusandae repellendus quod sit eaque, dignissimos porro enim doloremque minus quibusdam velit, inventore dolores magni iusto ratione atque  sit amet consectetur adipisicing elit. Ducimus recusandae repellendus quod sit eaque, dignissimos porro enim doloremque minus quibusdam velit, inventore dolores magni iusto ratione atque nam eligendi. Repellat aspernatur enim modi repellendus nam? Iure, aperiam. Recusandae praesentium aperiam consectetur accusantium hic assumenda, vero voluptas voluptatibus ut, vel autem magni quibusdam deleniti id quas cum excepturi. Est, hic alias minima voluptatibus provident repudiandae, dolor animi, qui e sit amet consectetur adipisicing elit. Ducimus recusandae repellendus quod sit eaque, dignissimos porro enim doloremque minus quibusdam velit, inventore dolores magni iusto ratione atque nam eligendi. Repellat aspernatur enim modi repellendus nam? Iure, aperiam. Recusandae praesentium aperiam consectetur accusantium hic assumenda, vero voluptas voluptatibus ut, vel autem magni quibusdam deleniti id quas cum excepturi. Est, hic alias minima voluptatibus provident repudiandae, dolor animi, qui enam eligendi. Repellat aspernatur enim modi repellendus nam? Iure, aperiam. Recusandae praesentium aperiam consectetur accusantium hic assumenda, vero voluptas voluptatibus ut, vel autem magni quibusdam deleniti id quas cum excepturi. Est, hic alias minima voluptatibus provident repudiandae, dolor animi, qui ea totam nostrum.<%= note.note %></p> 
+        <p class="note"><%= note.note %></p> 
         <p class="date"><b>Creado el dìa :  </b><%= note.createdAtFormatted %>  </p>
         <div class="deleteEditBox">
           <form id="deleteNote" action="/user/detailNote/<%=note.id%>?_method=DELETE" method="POST">

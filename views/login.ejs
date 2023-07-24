@@ -9,6 +9,15 @@
       <h3>
         Ingresa a tu cuenta !
       </h3>
+      
+       
+      
+
+      
+  
+      
+ 
+   
       <form action="" method="POST">
         <label for="email">Email: </label>
         <input type="email" name="email">
@@ -16,14 +25,15 @@
         <label for="password">Contraseña: </label>
         <input type="password" name="password">
         <br>
+        <% if (locals.errors) { %>
+          <h5 class="credencialesInvalidas">Credenciales invalidas</h5>
+         <% } %>
         <button type="submit">Ingresar</button>
       </form>
       <div>
         <h4>Aun no tienes cuenta?</h4>
       <a href="/user/register">Registrate !</a>
       </div>
-      
-      <%= locals.error %>
     </main>
     <%- include('./partials/footer') %> 
     <script src="/javascripts/index.js"></script>
