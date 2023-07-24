@@ -1,14 +1,26 @@
+.main_createNote  {
+    display: flex;
+   flex-direction: column;
+
+
+}
+.main_createNote form {
+margin: 0 auto;
+width: 90%;
+
+}
 .main_createNote form input{
     width: 95%;
     margin: 5px;
 
 }
+
 .main_createNote form textarea{
     width: 95%;
     resize: none;
- height: 100%;
     margin: 5px;
-
+    padding: 5px;
+    height: 60vh;
 }
 .main_createNote form button{
     width: 95%;

@@ -11,6 +11,21 @@
   margin: 0 auto;
   width: 90%;
 }
+.main_login div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  margin-top: 15px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.219);
+  border-radius: 10px;
+}
+.main_login div a{
+ color: #ffffff;
+ font-size: 20px;
+}
 
 
 @media (min-width: 768px) {

@@ -54,7 +54,7 @@ font-weight: 900;
 
 }
 .sinNotasUser{
-    width: 30%;
+    width: 90%;
    padding: 50px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.432);
@@ -62,12 +62,23 @@ font-weight: 900;
 
 }
 .agregarNota{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
     background-color: rgb(0, 255, 136);
     color:black;
     border-radius: 25px;
-    padding: 5px;
-    font-weight: 900;
+    padding: 1px 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-top: 2px solid rgb(39, 39, 39);
+    border-left: 2px solid rgb(39, 39, 39);
+   border-right: 4px solid rgb(26, 26, 26);
+   border-bottom: 4px solid rgb(20, 20, 20);
+
 }
+
 @media (min-width: 768px) {
     .list{
         width: 80%;
@@ -75,14 +86,27 @@ font-weight: 900;
     .main_user section article{
         overflow: auto;
     }
-    .agregarNota{
-        background-color: rgb(0, 255, 136);
-        color:black;
+    .sinNotasUser{
+        width: 30%;
+       padding: 50px;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.432);
         border-radius: 25px;
-        padding: 5px;
-        font-weight: 900;
-        position: absolute;
-        right: 50px;
-        top:15px
+    
     }
+    .agregarNota{
+    
+        padding: 10px;
+        transition: all 1s;
+      
+    }
+    .agregarNota i{
+    padding-top: 2px;
+      
+    }
+    .agregarNota:hover{
+        font-weight: 900;
+transition: all 1s;
+    }
+    
 }
