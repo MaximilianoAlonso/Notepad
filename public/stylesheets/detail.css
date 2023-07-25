@@ -6,20 +6,12 @@
   display: flex;
 }
 .main_detail section .headerNote .title {
-  width: 80%;
+  width: 100%;
   margin-left: 5px;
   height: 40px;
-  overflow: scroll;
+
 }
-.main_detail section .headerNote .id {
-  width: auto;
-  padding: 1px 2px;
-  text-align: right;
-  align-self: center;
-  background-color: black;
-  color: beige;
-  border-radius: 5px;
-}
+
 .main_detail section .note {
   overflow: scroll;
   padding: 15px;
@@ -63,13 +55,9 @@
     box-shadow: 4px 4px 4px black;
   }
 
-  .main_detail section .headerNote .title {
-
-    overflow: auto;
-  }
 
   .main_detail section .date {
-    width: 40%;
+    width: 50%;
     justify-content: center;
     align-self: center;
     margin-top: 10px;
@@ -84,17 +72,7 @@
     width: 30%;
 
   }
- 
-  .main_detail section .headerNote .id {
-  
-    width: 10%;
-    padding: 5px 10px;
-    text-align: center;
-    align-self: center;
-    background-color: black;
-    color: beige;
-    border-radius: 5px;
-  }
+
   .main_detail section .deleteEditBox button{
     background-color: rgb(24, 0, 46);
     border-radius: 25px;
@@ -114,3 +92,40 @@
     border: 2px solid rgb(241, 179, 179);  /* creates padding around scroll thumb */
   }
 }
+@media (min-width: 1024px) {
+  .main_detail section .deleteEditBox button{
+    background-color: rgb(24, 0, 46);
+    border-radius: 25px;
+    border-top: 2px solid rgb(226, 226, 226);
+    border-right: 4px solid rgb(226, 226, 226);
+    border-left: 2px solid rgb(226, 226, 226);
+    border-bottom: 4px solid rgb(226, 226, 226);
+    font-size: 22px;
+    padding: 8px 40px;
+    color: rgb(255, 233, 233);
+    margin-left: 3px;
+  }
+  .main_detail section .deleteEditBox button:hover{
+    background-color: rgb(79, 32, 122);
+  }
+
+
+
+.main_detail section .headerNote .title {
+  width: 100%;
+  margin-left: 5px;
+  height: 50px;
+  font-size: 35px;
+
+}
+.main_detail section .date {
+  width: 50%;
+  text-align: right;
+  justify-content: right;
+  align-self: center;
+  margin-top: 10px;
+  float: right;
+}
+}
+
+

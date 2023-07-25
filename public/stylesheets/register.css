@@ -74,3 +74,16 @@ width: 100%;
 }
 
     }
+    @media (min-width: 768px) {
+        .main_register form button{
+        transition: all 1s;
+    
+       }
+       .main_register form button:hover{
+        transition: all 1s;
+    letter-spacing: 3px;
+       }
+    }
+
+
+    

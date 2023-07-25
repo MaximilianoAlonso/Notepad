@@ -55,3 +55,27 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     width: 30%;
   }
 }
+
+
+@media (min-width: 1024px) {
+  
+  .main_login div{
+   width: 30%;
+   }
+   .main_login form button{
+    transition: all 1s;
+
+   }
+   .main_login form button:hover{
+    transition: all 1s;
+letter-spacing: 3px;
+   }
+   .main_login div h4{
+    font-size: 22px;
+   }
+.main_login div a{
+  color: #ffffff;
+  font-size: 25px;
+ }
+}
+

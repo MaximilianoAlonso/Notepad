@@ -4,6 +4,10 @@
 
 
 }
+.main_createNote  h3{
+    font-size: 30px;
+    text-align: center;
+}
 .main_createNote form {
 margin: 0 auto;
 width: 90%;
@@ -20,7 +24,7 @@ width: 90%;
     resize: none;
     margin: 5px;
     padding: 5px;
-    height: 60vh;
+    height: 50vh;
 }
 .main_createNote form button{
     width: 95%;
@@ -30,4 +34,14 @@ width: 90%;
 }
 #cancelNote a {
     color: black;
+}
+
+
+@media (min-width: 768px) {
+    
+    .main_createNote  h3{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+    }
 }
