@@ -9,6 +9,7 @@ const methodOverride = require('method-override');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
+const notesRouter = require('./routes/notes');
 
 const { use } = require("passport");
 const validateSession = require("./middlewares/validateSession")
@@ -35,9 +36,10 @@ app.use(logger('dev'))
    .use(methodOverride('_method'));
 app.use('/', indexRouter);
 app.use('/user', usersRouter);
+app.use('/user', notesRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function(req, res, next) {ee
   next(createError(404));
 });
 
