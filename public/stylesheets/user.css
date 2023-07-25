@@ -1,5 +1,5 @@
 .main_user{
-    padding-top:5px
+    padding-top:15px
     }
 .main_user h2{
 font-size: 28px;
@@ -90,8 +90,8 @@ font-weight: 900;
         overflow: auto;
     }
     .sinNotasUser{
-        width: 30%;
-       padding: 50px;
+        width: 80%;
+       padding: 10px;
         margin: 0 auto;
         background-color: rgba(0, 0, 0, 0.432);
         border-radius: 25px;
@@ -111,5 +111,22 @@ font-weight: 900;
         font-weight: 900;
 transition: all 1s;
     }
+    .main_user h2{
+        font-size: 34px;
+
+        }
     
+}
+
+@media (min-width: 768px) {
+    .sinNotasUser{
+        width: 87%;
+       padding: 50px;
+        margin: 0 auto;
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.432);
+        border-radius: 25px;
+    
+    }
+
 }

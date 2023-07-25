@@ -1,6 +1,12 @@
 .index_main{
   text-align: center;
 }
+.index_main h2{
+  text-align: center;
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 2px 2px black;
+}
 .index_main p{
         padding: 9px;
         font-weight: 700;
@@ -25,9 +31,16 @@
 }
 
 @media (min-width: 768px) {
+  .index_main h2{
+    text-align: center;
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    padding-top: 10px;
+  }
     .index_main p{
         font-size: 22px;
-        padding: 80px 80px 40px 80px;
+        padding: 0 80px 40px 80px;
         font-size: 32px;
         line-height: 60px;
 
@@ -37,8 +50,8 @@
 @media (min-width: 1024px) {
   .index_main p{
       font-size: 22px;
-      padding: 90px;
-      font-size: 32px;
+      padding: 20px 90px;
+      font-size: 40px;
       line-height: 60px;
   }
   main{

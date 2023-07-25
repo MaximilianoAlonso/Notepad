@@ -13,18 +13,6 @@ const usersRouter = require('./routes/users');
 const { use } = require("passport");
 const validateSession = require("./middlewares/validateSession")
 
-const nodemailer = require('nodemailer');
-
-// Configurar la cuenta de correo electrónico que utilizará para enviar los mensajes
-const transporter = nodemailer.createTransport({
-  service: 'Gmail', // Puedes cambiar esto por otro proveedor de correo electrónico o usar tus propios datos SMTP
-  auth: {
-    user: 'elgrungemaxi1986@gmail.com', // Coloca aquí tu dirección de correo electrónico
-    pass: 'ijgnxiomakwvlmfd', // Coloca aquí tu contraseña de correo electrónico
-  },
-});
-console.log(transporter)
-
 const app = express();
 
 // view engine setup
