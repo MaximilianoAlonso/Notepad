@@ -1,5 +1,5 @@
 .main_detail section {
-  height: 90%;
+  height: 85%;
 }
 .main_detail section .headerNote {
   background-color: rgba(98, 64, 248, 0.411);
@@ -27,7 +27,7 @@
   bottom: 5px;
   display: flex;
   justify-content: space-between;
-  font-size: 22px;
+  font-size: 18px;
   color: azure;
 }
 .main_detail section .deleteEditBox {
