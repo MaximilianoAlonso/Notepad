@@ -2,6 +2,7 @@
  const OAuth2Strategy = require("passport-google-oauth").OAuth2Strategy;
 
  const clientID = "520784497341-k4p164n2uj90oc9gjs6m936t5lfknkq0.apps.googleusercontent.com"
+ 
  const clientSecret = "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"
  const callbackURL = "https://notepad-1pwu.onrender.com/auth/google/callback"
 
