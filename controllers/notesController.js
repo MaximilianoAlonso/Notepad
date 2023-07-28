@@ -33,23 +33,24 @@ module.exports = {
   },
   saveNote: async (req, res) => {
     try {
-      const { id, title, note } = req.body;
-
+      const { title, note } = req.body;
+  
       const numeroalAzar =
         Math.floor(Math.random() * (9999999 - 555552 + 1)) + 5559;
-
+  
       const newNote = await db.notes.create({
         id: numeroalAzar,
-        userId: req.session.userLogin.id,
+        userId: req.session.userLogin.id, // Establecer correctamente el userId
         title: title,
         note: note,
       });
-
+  
       return res.redirect("/user");
     } catch (error) {
       console.log(error);
     }
   },
+  
   detailNote: async (req, res) => {
     const { id } = req.params;
 
@@ -92,30 +93,27 @@ module.exports = {
     } catch (error) {
       console.log(error);
     }
-
-   
-   
   },
   update: async (req, res) => {
     const errors = validationResult(req);
     try {
       const { title, note } = req.body;
-
-    const id = +req.params.id
-
-      const newNote = await db.notes.update({ 
+      const id = +req.params.id;
+      
+      const updatedNote = await db.notes.update({ 
         title: title,
         note: note,
-      },{
-        where:{id}
+        userId: req.session.userLogin.id,
+      }, {
+        where: { id }
       });
-
+  
       return res.redirect("/user");
     } catch (error) {
       console.log(error);
     }
- 
   },
+  
   deleteNote: async (req,res) => {
     const {id} = req.params;
  

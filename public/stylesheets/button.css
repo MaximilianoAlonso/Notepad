@@ -1,0 +1,16 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+.google-icon{
+ margin-bottom: -4px;
+}
+.text-google{
+font-family: roboto;
+font-size: 18px;
+    margin-left: -8px;
+    margin-bottom: -4px;
+    color: black;
+    display: inline;
+}
+.googleButon{
+    color: black;
+}

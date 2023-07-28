@@ -6,15 +6,21 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const session = require('express-session');
 const methodOverride = require('method-override');
+const passport = require("passport")
+const {loginGoogleInitialize} = require("./services/googleServices")
+
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const notesRouter = require('./routes/notes');
+const authRouter = require('./routes/auth');
+
 
 const { use } = require("passport");
 const validateSession = require("./middlewares/validateSession")
 
 const app = express();
+loginGoogleInitialize()
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -31,12 +37,15 @@ app.use(logger('dev'))
       resave: false,
       saveUninitialized: true
     }))
+    .use(passport.initialize())
+    .use(passport.session())
     
     .use(validateSession)
    .use(methodOverride('_method'));
 app.use('/', indexRouter);
 app.use('/user', usersRouter);
 app.use('/user', notesRouter);
+app.use('/auth', authRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {ee
