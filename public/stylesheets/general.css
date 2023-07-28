@@ -6,7 +6,7 @@
 }
 
 body {
-  
+  overflow: auto;
   background-image: url("/images/fondoLapices.jpg");
   background-size: contain;
   background-repeat: repeat;
@@ -24,13 +24,15 @@ li {
   list-style: none;
 }
 main {
-    overflow: scroll;
+  overflow: auto;
+  
   border-radius: 0 0 25px 25px;
   height: 88%;
   position: fixed;
   top: 75px;
   width: 95%;
   padding: 8px;
+  padding-bottom: 100px;
   background-color: #47439be7;
   z-index: 1;
   border-left: 2px solid rgb(39, 39, 39);
